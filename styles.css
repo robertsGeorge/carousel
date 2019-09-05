@@ -60,8 +60,10 @@
 
 
 .carousel {
-  width: 400px;
-  overflow: scroll;
+  width: 390px;
+  overflow-x: scroll;
+
+  scroll-behavior: smooth;
 
   border: 1px solid red;
 
