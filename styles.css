@@ -1,61 +1,41 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-/* Notes on approach:
-- am currently trying floats out to get the layout.
-- next try flexbox.
-*/
 
 .container {
+  width: 500px;
+  padding: 15px;
+  margin: 15px auto;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  border-radius: 15px;
   background: lightgray;
-  width: 450px;
-/*   height: 150px; */
-  overflow: hidden; /* forces container to pay attention to height of children */
-/*   position: relative; */
+
+
+  /* forces container to pay attention to height of children */
+  /* overflow: hidden;  */
+
 }
-
-.carousel {
-  width: 375px;
-  margin: 0 auto;
-  overflow: hidden;
-  border: 1px solid red;
-  float: left;
-}
-
-
-ul {
-  height: 130px;
-  width: 9999px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 0;
-}
-
-ul li {
-  display: inline-block; /* removes extra space between list items */
-}
-
-ul img {
-  width: 130px;
-  height: 130px;
-  display: block; /* removes extra space near images */
-}
-
 
 
 
 .arrow {
-  padding: 0;
-  background: #ddd;
-  border-radius: 15px;
-  border: 1px solid gray;
-  font-size: 24px;
-  line-height: 24px;
-  color: #444;
   display: block;
+  padding: 0;
+
+  border: 1px solid gray;
+  border-radius: 15px;
+  background: #ddd;
+  line-height: 24px;
+  font-size: 24px;
+  color: #444;
   
-/*   position: absolute; */
-  float: left;
-  margin-top: 10%;
 }
 
 .arrow.left {
@@ -74,3 +54,60 @@ ul img {
   background: #ccc;
   cursor: pointer;
 }
+
+
+
+
+
+.carousel {
+  width: 400px;
+  overflow: scroll;
+
+  border: 1px solid red;
+
+
+}
+
+
+
+
+
+ul {
+  width: max-content;
+  height: 130px;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  font-size: 0;
+
+  border: 1px solid green;
+}
+
+ul li {
+  /* removes extra space between list items */
+  /* Puts lis in a horizontal row */
+  display: inline-block; 
+}
+
+ul img {
+  display: block; 
+  width: 130px;
+  height: 130px;
+  /* removes extra space near images */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
