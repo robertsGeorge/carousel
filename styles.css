@@ -1,0 +1,76 @@
+
+/* Notes on approach:
+- am currently trying floats out to get the layout.
+- next try flexbox.
+*/
+
+.container {
+  background: lightgray;
+  width: 450px;
+/*   height: 150px; */
+  overflow: hidden; /* forces container to pay attention to height of children */
+/*   position: relative; */
+}
+
+.carousel {
+  width: 375px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid red;
+  float: left;
+}
+
+
+ul {
+  height: 130px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+ul li {
+  display: inline-block; /* removes extra space between list items */
+}
+
+ul img {
+  width: 130px;
+  height: 130px;
+  display: block; /* removes extra space near images */
+}
+
+
+
+
+.arrow {
+  padding: 0;
+  background: #ddd;
+  border-radius: 15px;
+  border: 1px solid gray;
+  font-size: 24px;
+  line-height: 24px;
+  color: #444;
+  display: block;
+  
+/*   position: absolute; */
+  float: left;
+  margin-top: 10%;
+}
+
+.arrow.left {
+
+}
+
+.arrow.right {
+  
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+.arrow:hover {
+  background: #ccc;
+  cursor: pointer;
+}
